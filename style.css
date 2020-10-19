@@ -1,0 +1,255 @@
+/* https://coolors.co/20a2d6-380d20-b2e2ce-186169  farbpalette*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+#nav-bar{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  min-height: 8vh;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  background-color:#B2E2CE;
+  border-radius: 7.5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav-links li{
+  display: inline;
+  display: flex;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: #186169;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.nav-links a:hover{
+  color: #380d20;
+}
+
+#header-img{
+  width: 100px;
+  height: 100px;
+  
+ 
+}
+
+#logo-heading{
+  padding-top: 5rem;
+  display: flex;
+  justify-content:   center;
+  align-items: center; 
+  /* damit das Logo und die Schrift auf einer Achse bleiben */
+}
+
+h1{
+  color: #380d20;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  padding-left: 1rem; 
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+
+}
+
+#vid-text{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+#video{
+  min-width: 45%;
+  padding-right: 4%;
+  padding-left: 1%;
+}
+
+#how-text{
+  min-width: 45%;
+  padding-left: 4%;
+  padding-right: 1%;
+}
+
+#how-head{
+  text-align: center;
+  
+  
+}
+
+h2{
+  font-family: 'Roboto', sans-serif;
+  color: #186169;
+  padding-bottom: 1rem;
+}
+
+
+
+#price{
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+#container{
+  display: flex;
+  
+  padding-top: 2rem ;
+  
+}
+
+h3{
+  font-family: 'Roboto', sans-serif;
+  color: #186169;
+  padding-bottom: 1rem;
+}
+
+h4{
+  font-family: 'Roboto', sans-serif;
+  color: #186169;
+  padding-bottom: 1rem;
+}
+
+h5{
+  font-family: 'Roboto', sans-serif;
+  color: #186169;
+  padding-bottom: 1rem;
+}
+
+#item2{
+  padding-left: 0.5rem ;
+  padding-top: 0.5rem ;   
+}
+
+#item1{
+  padding-left: 0.5rem ;
+  padding-top: 0.5rem ; 
+  
+}
+
+#item3{
+  padding-left: 0.5rem ; 
+  padding-top: 0.5rem ; 
+}
+
+.border{
+  border: 2px solid #380d20;
+  margin-left: 1%;
+  background-color: hsl(198, 100%, 95%);
+}
+
+#border1{
+  margin-left: 0;
+}
+
+#sign{
+  padding-top: 2rem;
+  padding-left: 4%;
+  padding-right: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form{
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(198, 100%, 95%);
+  width: 100%;
+  border-radius: 10px;
+}
+
+#dis{
+  padding-bottom: 0.5rem;
+}
+
+label{
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+
+#email{
+  height: 4rem; 
+  align-self: center;
+  width: 50%;
+  border-radius: 7.5px;
+  background-color: #E2F3EE;
+  border-color: #380d20;
+  
+}
+
+#submit {
+  margin-top: 2rem;
+  height: 2rem;
+  align-self: center;
+  width: 25%;
+  border-radius: 7.5px;
+  background-color: #B2E2CE;
+  border: none;
+  cursor: pointer;
+  
+}
+
+#submit:hover{
+  border-radius: 30px;
+  border-color: #380d20;
+}
+
+
+
+@media(max-width: 600px){
+  .nav-links{
+    flex-direction: column;
+  }
+  .nav-links li{
+    justify-content: center;
+    padding-top: 1rem;
+  }
+
+  #container{
+    flex-flow: column wrap;
+    
+  }
+  .border{
+    margin-top: 1rem;
+  }
+}
+
+@media(max-width: 1200px){
+
+  #vid-text{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  #video{
+    align-self: center;
+  }
+
+}
